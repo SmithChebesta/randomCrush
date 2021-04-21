@@ -44,6 +44,7 @@
                         padding: 30px 50px;
                         font-weight: 800;
                         font-size: 2.125rem;
+                        border-radius: 8px;
 
                   }
                   .btn-icon{
@@ -82,14 +83,9 @@
                         color: #121125;
                   }
                   .container{
-                        overflow-x: hidden;
-
                         margin: 0 auto;
                         max-width: 1440px;
-                        padding: 60px;
-                        align-items: center;
-                        display: flex;
-                        flex-direction: column;
+                       
                   }
                   .card{
                         background: #FFFFFF;
@@ -104,6 +100,10 @@
                   }
 
                   .nav {
+                        z-index: 99;
+                        position: fixed;
+                        top: 0px;
+                        width: 100%;
                         padding: 10px 30px;
                         background: #000;
                         background: #ffffff;
@@ -121,6 +121,9 @@
                         margin-right: 20px;
                   }
                   .nav__logo-text{
+                        user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
                         font-family: "Lato";
                         font-weight: 300;
                         font-size: 2.5rem;
@@ -132,8 +135,15 @@
                   }
                   .hero__bg{
                         background: linear-gradient(131.48deg, #40EBF5 1.22%, #8C59F9 98.5%);
+                        position: relative;
+                        overflow-x: hidden;
                   }
-                  
+                  .hero_container{
+                        padding: 60px;
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                  }
                   .hero__title{
                         font-weight: 800;
                         font-size: 5rem;
@@ -160,9 +170,13 @@
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 20px;
+                        z-index: 3;
+
 
                   }
-                  
+                  .hero__card--last{
+                        margin-bottom: 80px;
+                  }
                   .hero__card__img{
                         width: 530px;
                         height: 350px;
@@ -179,6 +193,60 @@
                   }
                   .hero__card__text{
                         margin-top: 30px;
+                  }
+                  .hero__bottom-btn{
+                        z-index: 3;
+                        margin-bottom: 80px;
+                  }
+                  .hero__cloud{
+                        position: absolute;
+                  }
+                  .hero__cloud-big-tl{
+                        left: -100px;
+                        top: 1700px;
+                        z-index: 2;
+                  }
+                  .hero__cloud-small-tl{
+                        left: 220px;
+                        top: 1660px;
+                  }
+                  .hero__cloud-big-br{
+                        position: absolute;
+                        right: -40px;
+                        z-index: 2;
+                        bottom: 0px;
+                  }
+                  .hero__cloud-small-br{
+                        right: -200px;
+                        bottom: 130px;
+
+                  }
+                  .device-bg{
+                        background: #fff;
+                  }
+                  .device{
+                        padding: 120px 60px 90px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        margin-bottom: -210px;
+                  }
+                  .device__text{
+                        padding-left: 50%;
+                  }
+                  .device__text__title{
+                        margin-bottom: 30px;
+                  }
+                  .device__img{
+                        filter: drop-shadow(10.9375px 16.4062px 32.8125px rgba(41, 41, 42, 0.5));
+                        position: absolute;
+                        left: 15%;
+                        top: -80px;
+                        z-index: 3;
+                  }
+                  .device__bottom-btn{
+                        margin-top: 80px;
                   }
                   @media screen and (max-width: 1440px){
                         .hero__title{
@@ -205,6 +273,15 @@
                               margin-right: 0px;
                               align-items: center;
                         }
+                        .device__img{
+                              display: none;
+                        }
+                        .device__text{
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              padding-left: 0px;
+                        }
                   }
                   @media screen and (max-width: 996px){
                         .hero__title{
@@ -228,7 +305,10 @@
                         }
                   }
                   @media screen and (max-width: 576px){
-                        .container{
+                        body{
+                              padding-top: 59px;
+                        }
+                        .hero_container{
                               padding: 30px 10px;
                         }
                         .btn-primary {
@@ -299,6 +379,9 @@
                               display: none;
 
                         }
+                        .hero__card--last{
+                              margin-bottom: inherit;
+                        }
                         .hero__card--slide-show{
                               display: initial;
                         }
@@ -311,9 +394,23 @@
                               width: 100%;
 
                         }
+                        .hero__bottom-btn{
+                              margin-bottom: 30px;
+                        }
+                        .hero__cloud{
+                              display: none;
+                        }
+                        .device__text__title{
+                              font-size: 1.875rem;
+                              text-align: center;
+                        }
+                        
                   }
 
                   @media screen and (max-width: 320px){
+                        body{
+                              padding-top: 53px;
+                        }
                         .btn-icon{
                               display: none;
                         }
@@ -352,7 +449,7 @@
             </nav>
             <section name="hero">
                   <div class="hero__bg">
-                        <div class="container">
+                        <div class="hero_container container">
                               <h1 class="hero__title">
                                     Random Cam Chat with Girls
                               </h1>
@@ -397,7 +494,7 @@
                                     </div>
                               </div>
 
-                              <div class="hero__card flex-row-reverse card">
+                              <div class="hero__card hero__card--last flex-row-reverse card">
                                     <img src="assets/images/how-it-work-4.png" alt="demonstrate how the product work 1" class="hero__card__img">
                                     <div class="hero__card__text-container hero__card__text-container--reverse">
                                           <h3 class="hero__card__title text-h3">4. Load Up Your Minutes</h3>
@@ -405,6 +502,36 @@
                                                 No good date ends with just talking, so why not take things to the next level? You’ll need to purchase minutes so you can continue exploring things for as long as you like. This is your chance to have fun and get to know the girl better. The more you top up your minutes, the longer you get to chat and hang out with that hot babe.
                                           </p>
                                     </div>
+                              </div>
+
+                              <a href="#" class="hero__bottom-btn btn btn-primary btn-primary--big">
+                                    <span style="padding-top: 5px;">Try now</span>
+                                    <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
+                              </a>
+                              <img src="assets/images/cloud-big.svg" class="hero__cloud hero__cloud-big-tl" alt="" srcset="">
+                              <img src="assets/images/cloud-small.svg" class="hero__cloud hero__cloud-small-tl" alt="" srcset="">
+                              <img src="assets/images/cloud-big.svg" class="hero__cloud hero__cloud-big-br" alt="" srcset="">
+                              <img src="assets/images/cloud-small.svg" class="hero__cloud hero__cloud-small-br" alt="" srcset="">
+                        </div>
+                  </div>
+            </section>
+            <section name="device-blurb">
+                  <div class="device-bg">
+                        <div class="device container">
+                              <img src="assets/images/iPhone X.png" class="device__img" alt="demonstrate how RandomCrush work on iPhone X" srcset="">
+                              <div class="device__text">
+                                          <h3 class="text-h3 device__text__title">Have Video Sex on Any Device</h3>
+                                          <p class="text-p ">
+                                                No matter the device you’re using, your random chat experience should be seamless. You can use your smartphone or tablet from wherever you are and start meeting sexy girls from around the world.
+                                          </p>
+                                          <br>
+                                          <p class="text-p ">
+                                                Want to flirt before bed? Bored during a business meeting? Turn on your camera, find your match and you’re good to go. If you want to keep both hands free to jerk off while chatting, log in from your PC or get those AirPods ready.
+                                          </p>
+                                          <button href="#" class="device__bottom-btn btn btn-primary btn-primary--big">
+                                                <span style="padding-top: 5px;">Get started</span>
+                                                <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
+                                          </button>
                               </div>
                         </div>
                   </div>
