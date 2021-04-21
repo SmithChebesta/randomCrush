@@ -10,6 +10,7 @@
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
             <title>RandomCrush</title>
             <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
             <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -81,6 +82,7 @@
                         font-weight: normal;
                         font-size: 1.375rem;
                         color: #121125;
+                        line-height: 175%;
                   }
                   .container{
                         margin: 0 auto;
@@ -392,12 +394,67 @@
                         display: none;
                   }
                   
+                  .cta-bg{
+                        background: linear-gradient(131.48deg, #40EBF5 1.22%, #8C59F9 98.5%);
+                  }
+                  .cta{
+                        padding: 200px 60px 150px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                  }
+                  .cta__card{
+                        padding: 60px;
+                        display: flex;
+                        align-items: center;
+                        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+                  }
+                  .cta__card__text-container{
+                        margin-right: 80px;
+                  }
+                  .cta__card__text-container__title{
+                        margin-bottom: 30px;
+                  }
+                  .cta__card__text-container__btn{
+                        margin-top: 80px;
+                  }
+                  .cta__card__img{
+                        width: 430px;
+                        height: 250px;
+                  }
+                  .footer{
+                        padding: 40px 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        background: #000;
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                        font-family: "Roboto";
+                        color: #8B8B8B;
+                  }
+                  .footer__link{
+                        text-decoration: none;
+                        color: #8B8B8B;
+
+                        
+                  }
+                  .footer__divider{
+                        margin: 0px 4px;
+                  }
                   @media screen and (max-width: 1440px){
                         .hero__title{
                               font-size: 4.4rem;
                         }
                         .benefit__text-img__text-container{
                               margin-left: 40px;
+                        }
+                        .cta__card__text-container__title{
+                              white-space: nowrap;
+                        }
+                        .cta__card__text-container{
+                              margin-right: 40px;
                         }
                   }
                   @media screen and (max-width: 1200px){
@@ -455,11 +512,39 @@
                               margin-right: 0px;
                               width: 640px;
                         }
+                        .cta{
+                              padding: 100px 60px;
+                        }
+                        .cta__card{
+                              max-width: 980px;
+                              width: 100%;
+                        }
+                        .cta__card__text-container{
+                              margin-right: 0px;
+                              display: flex;
+                              justify-content: center;
+                              flex-direction: column;
+                              align-items: center;
+                        }
+                        .cta__card__text-container__title{
+                              text-align: center;
+                        }
+                        .cta__card__img{
+                              display: none;
+                        }
 
                   }
                   @media screen and (max-width: 996px){
                         .hero__title{
                               font-size: 3rem;
+                        }
+                        .footer__divider:nth-of-type(2){
+                              display: none;
+                        }
+                        .footer__link:nth-of-type(3){
+                              width: 100%;
+                              text-align: center;
+                              margin-top: 8px;
                         }
                   }
                   @media screen and (max-width: 768px){
@@ -498,7 +583,9 @@
                         .benefit__text-img__text-container , .benefit__text-img--reverse .benefit__text-img__text-container {
                               width: 100%;
                         }
-                       
+                        .cta__card__text-container__title{
+                              white-space: normal;
+                        }
                   }
                   @media screen and (max-width: 576px){
                         body{
@@ -679,6 +766,15 @@
                               display: flex;
                         justify-content: center;
                         }
+                        .cta{
+                              padding: 60px 10px;
+                        }
+                        .cta__card__text-container__title{
+                              font-size: 1.875rem;
+                        }
+                        .cta__card__text-container__btn {
+                              margin-top: 40px;
+                        }
                   }
 
                   @media screen and (max-width: 320px){
@@ -715,6 +811,17 @@
                         .benefit__text-img__text-container , .benefit__text-img--reverse .benefit__text-img__text-container {
                               width: 100%;
                               padding: 0px 10px;
+                        }
+                        .footer{
+                              padding: 30px 10px;
+                        }
+                        .footer__divider:nth-of-type(1){
+                              display: none;
+                        }
+                        .footer__link:nth-of-type(2){
+                              width: 100%;
+                              text-align: center;
+                              margin-top: 8px;
                         }
                         
                   }
@@ -934,5 +1041,32 @@
                   </div>
 
             </section>
+            <section name="cta">
+                  <div class="cta-bg">
+                        <div class="cta container">
+                              <div class="cta__card card">
+                                    <div class="cta__card__text-container">
+                                          <h3 class="cta__card__text-container__title text-h3">Say Hello to a Sexy New Experience</h3>
+                                          <p class="text-p">
+                                                A whole new roulette-style live chat experience is waiting for you on RandomCrush. Take virtual flirting to another level and explore all of your dirtiest dreams right here with a random girl who’s just looking to have fun, too. What are you waiting for? It is super easy to get started. Just turn on your camera and say hello to the beautiful face smiling back at you!
+                                          </p>
+                                          <button onclick="window.location = '/'" class="cta__card__text-container__btn btn btn-primary btn-primary--big">
+                                                <span style="padding-top: 5px;">Get started</span>
+                                                <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
+                                          </button>
+                                    </div>
+                                    <img src="assets/images/Mockup.png" class="cta__card__img" alt="Mock up">
+                              </div>
+                        </div>
+                  </div>
+
+            </section>
+            <footer class="footer">
+                  <a href="#" class="footer__link">Privacy Policy</a>
+                  <span class="footer__divider"> | </span>
+                  <a href="#" class="footer__link">DMCA Notice of Copyright Infringement</a>
+                  <span class="footer__divider"> | </span>
+                  <a href="#" class="footer__link">18 U.S.C. 2257 and 2257A Record-Keeping Requirements Compliance Statement</a>
+            </footer>
       </body>
 </html>
