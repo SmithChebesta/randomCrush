@@ -230,7 +230,6 @@
                         justify-content: center;
                         align-items: center;
                         position: relative;
-                        margin-bottom: -210px;
                   }
                   .device__text{
                         padding-left: 50%;
@@ -248,6 +247,72 @@
                   .device__bottom-btn{
                         margin-top: 80px;
                   }
+                  .feature-bg{
+                        background: linear-gradient(131.48deg, #40EBF5 1.22%, #8C59F9 98.5%);
+                        position: relative;
+                        overflow-x: hidden;
+                  }
+                  .feature{
+                        padding: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                  }
+                  .feature__title{
+                        margin-top: 25px;
+                        margin-bottom: 100px;
+                  }
+                  .feature__card-container{
+                        z-index: 3;
+                        min-width: 500px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 110px;
+                  }
+                  .feature__card-container--last{
+                        margin-bottom: 100px;
+                  }
+                  .feature__card{
+                        padding: 60px;
+                        width: 55%;
+
+                  }
+                  .feature__card__title{
+                        margin-bottom: 30px;
+                  }
+                  .feature__card__img{
+                        width: 420px;
+                        height: 420px;
+                  }
+                  .feature__cloud{
+                        position: absolute;
+                  }
+                  .feature__bottom-btn{
+                        z-index: 3;
+
+                  }
+                  .feature__cloud-big-tr{
+                        right: -50px;
+                        top: 660px;
+                        z-index: 2;
+                  }
+                  .feature__cloud-small-tr{
+                        right: -200px;
+                        top: 600px;
+                  }
+                  .feature__cloud-big-bl{
+                        position: absolute;
+                        z-index: 2;
+                        bottom: 0px;
+                        left: -200px;
+                  }
+                  .feature__cloud-small-bl{
+                        left: 110px;
+                        bottom: 120px;
+
+                  }
+                  
                   @media screen and (max-width: 1440px){
                         .hero__title{
                               font-size: 4.4rem;
@@ -273,6 +338,9 @@
                               margin-right: 0px;
                               align-items: center;
                         }
+                        .device{
+                              padding: 60px;
+                        }
                         .device__img{
                               display: none;
                         }
@@ -281,6 +349,14 @@
                               flex-direction: column;
                               align-items: center;
                               padding-left: 0px;
+                        }
+
+                        .feature__card-container{
+                              flex-direction: column-reverse;
+                        }
+                        .feature__card{
+                              max-width: 750px;
+                              width: 100%;
                         }
                   }
                   @media screen and (max-width: 996px){
@@ -340,6 +416,9 @@
                         .text-p{
                               font-size: 0.875rem;
                         }
+                        .white-space-nowarp{
+                              white-space: nowrap;
+                        }
 
                         .nav{
                               padding: 10px;
@@ -361,19 +440,21 @@
                               width: 120%;
                               
                         }
-                        .hero__sub-title--sub{
+                        .text-h2--sub{
                               margin-top: 70px;
                               text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
                               font-size: 2.5rem;
                               
                         }
-                        .hero__sub-title{
+                        .text-h2{
                               margin-top: 5px;
-                              width: 185px;
                               font-size: 1.875rem;
-                              margin-bottom: 30px;
                         }
-                       
+                        .hero__sub-title{
+                              width: 185px;
+                              margin-bottom: 30px;
+
+                        }
                         .hero__card{
                               width: 100%;
                               display: none;
@@ -404,7 +485,41 @@
                               font-size: 1.875rem;
                               text-align: center;
                         }
+                        .device{
+                              padding: 30px;
+                        }
+                        .device__bottom-btn{
+                              margin-top: 40px;
+                        }    
+                        .feature{
+                              padding: 60px 30px;
+                        }
+                        .feature__cloud,.feature__card-container{
+                              display: none;
+                        } 
                         
+                        .feature__card-container--slide-show{
+                              display: flex; 
+                        }
+                        .feature__sub-title{
+                              margin-top: 0px;
+                        }
+                        .feature__title{
+                              margin-bottom: 40px;
+                        }
+                        .feature__card__img{
+                              width: 320px;
+                              height: 320px;
+                        }
+                        .feature__card-container{
+                              min-width: 0px;
+                              margin-bottom: 40px;
+                        }
+                        .feature__card {
+                              margin-top: 40px;
+                              /* max-width: 320px; */
+                              width: 100%;
+                        }
                   }
 
                   @media screen and (max-width: 320px){
@@ -442,10 +557,10 @@
                         />
                         <span class="nav__logo-text">Random</span><span class="nav__logo-text nav__logo-text--bold">Crush</span>
                   </div>
-                  <a href="#" class="btn btn-primary">
+                  <button onclick="window.location = '/'" class="btn btn-primary">
                         Try now
                         <img src="assets/images/chevron-right.svg" class="btn-icon" height="14" alt="chevron right">
-                  </a>
+                  </button>
             </nav>
             <section name="hero">
                   <div class="hero__bg">
@@ -454,10 +569,10 @@
                                     Random Cam Chat with Girls
                               </h1>
                               <img src="assets/images/hero-image.png" alt="video demo" class="hero__image">
-                              <a href="#" class="btn btn-primary btn-primary--big">
+                              <button onclick="window.location = '/'" class="btn btn-primary btn-primary--big">
                                           <span style="padding-top: 5px;">Get started</span>
                                           <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
-                              </a>
+                              </button>
                               <p class="hero__sub-title--sub text-h2--sub ">
                                     It’s Easy!
                               </p>
@@ -504,10 +619,10 @@
                                     </div>
                               </div>
 
-                              <a href="#" class="hero__bottom-btn btn btn-primary btn-primary--big">
+                              <button  onclick="window.location = '/'" class="hero__bottom-btn btn btn-primary btn-primary--big">
                                     <span style="padding-top: 5px;">Try now</span>
                                     <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
-                              </a>
+                              </button>
                               <img src="assets/images/cloud-big.svg" class="hero__cloud hero__cloud-big-tl" alt="" srcset="">
                               <img src="assets/images/cloud-small.svg" class="hero__cloud hero__cloud-small-tl" alt="" srcset="">
                               <img src="assets/images/cloud-big.svg" class="hero__cloud hero__cloud-big-br" alt="" srcset="">
@@ -528,11 +643,61 @@
                                           <p class="text-p ">
                                                 Want to flirt before bed? Bored during a business meeting? Turn on your camera, find your match and you’re good to go. If you want to keep both hands free to jerk off while chatting, log in from your PC or get those AirPods ready.
                                           </p>
-                                          <button href="#" class="device__bottom-btn btn btn-primary btn-primary--big">
+                                          <button onclick="window.location = '/'" class="device__bottom-btn btn btn-primary btn-primary--big">
                                                 <span style="padding-top: 5px;">Get started</span>
                                                 <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
                                           </button>
                               </div>
+                        </div>
+                  </div>
+            </section>
+            <section name="feature">
+                  <div class="feature-bg">
+                        <div class="feature container">
+                              <p class="feature__sub-title text-h2--sub">
+                                    Get Ready
+                              </p>
+                              <h2 class="feature__title text-h2">
+                                     <span class="white-space-nowarp">For a New</span> 
+                                     <span class="white-space-nowarp">Roulette Experience</span> 
+
+                                    
+                              </h2>
+                              <div class="feature__card-container feature__card-container--slide-show">
+                                    <div class="feature__card card">
+                                          <h3 class=" feature__card__title text-h3">Find Your Random Crush</h3>
+                                          <p class="text-p ">On RandomCrush, you’ll be randomly paired with a partner of the opposite sex to chat, virtually flirt and have video sex. That’s right, fellas. You will only be paired with a girl, unlike other roulette sites where you have to click through guy after guy. We monitor the number of signups to maintain a 50:50 ratio of men to women, so you’ll never have to wait long to see a new beautiful face. Even better, these are the types of girls you’d meet at a bar or a friend’s party and want to take home.</p>
+                                    </div>
+                                    <img src="assets/images/feature-1.png" class="feature__card__img" alt="woman">
+                              </div>
+                              <div class="feature__card-container flex-row-reverse">
+                                    <div class="feature__card card">
+                                          <h3 class=" feature__card__title text-h3">Click Next to Find Your Perfect Match</h3>
+                                          <p class="text-p ">Not interested in the first girl you’re paired with? No problem! Click Next and keep looking. It’s speed dating like you’ve never experienced before because it always leads to 1-on-1 cam sex. Instead of waiting for a timer to go off, you can switch partners whenever you want, no awkwardness. You know what that means? You can have a virtual quickie and then move on to the next girl.</p>
+                                    </div>
+                                    <img src="assets/images/feature-2.png" class="feature__card__img" alt="woman">
+                              </div>
+                              <div class="feature__card-container feature__card-container--last">
+                                    <div class="feature__card card">
+                                          <h3 class=" feature__card__title text-h3">A New Kind of Roulette Site</h3>
+                                          <p class="text-p ">
+                                                The more you get to know your new friend, the longer you’ll want to chat. Don’t let that connection fade away! Register for an account so you can take full advantage of RandomCrush. Members can video chat using their camera and microphone. Hear her sexy voice while she moans and talks dirty to you. 
+                                          </p>
+                                          <br>
+                                          <p class="text-p ">
+                                                This is different from other roulette sites and live chat sites.  It’s not about cam girls putting on a show or taking them into a private chat. These are regular people who are looking for fun and a real connection. You can explore your raunchy fantasies with a stranger, just the two of you, which makes it even sexier.
+                                          </p>
+                                    </div>
+                                    <img src="assets/images/feature-3.png" class="feature__card__img" alt="woman">
+                              </div>
+                              <button onclick="window.location = '/'" class="feature__bottom-btn btn btn-primary btn-primary--big">
+                                    <span style="padding-top: 5px;">Get started</span>
+                                    <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
+                              </button>
+                              <img src="assets/images/cloud-big.svg" class="feature__cloud feature__cloud-big-tr" alt="" srcset="">
+                              <img src="assets/images/cloud-small.svg" class="feature__cloud feature__cloud-small-tr" alt="" srcset="">
+                              <img src="assets/images/cloud-big.svg" class="feature__cloud feature__cloud-big-bl" alt="" srcset="">
+                              <img src="assets/images/cloud-small.svg" class="feature__cloud feature__cloud-small-bl" alt="" srcset="">
                         </div>
                   </div>
             </section>
