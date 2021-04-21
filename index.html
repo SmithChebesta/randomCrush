@@ -348,9 +348,56 @@
                   .inter__bottom-btn{
                         margin-top: 60px;
                   }
+                  .benefit{
+                        padding: 60px 60px 50px;
+                        background: #fff;
+                  }
+                  .benefit__title{
+                        color: #121125;
+                        text-shadow: none;
+                        margin-bottom: 60px;
+                  }
+                  .benefit__title--bold{
+                        color:  #B413ED;;
+                  }
+                  .benefit__text-img{
+                        padding: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                  }
+                  .benefit__text-img--reverse{
+                        flex-direction: row-reverse;
+                  }
+                  .benefit__text-img__img{
+                        max-width: 640px;
+                        max-height: 350px;
+                        width: 100%;
+
+                  }
+                  .benefit__text-img__text-container{
+                        margin-left: 100px;
+                  }
+                  .benefit__text-img--reverse .benefit__text-img__text-container{
+                        margin-right: 100px;
+                        margin-left: 0px;
+
+                  }
+                  .benefit__text-img__title{
+                        margin-bottom: 30px;
+                        font-weight: 800;
+                  }
+                  .benefit__bottom-btn-container{
+                        
+                        display: none;
+                  }
+                  
                   @media screen and (max-width: 1440px){
                         .hero__title{
                               font-size: 4.4rem;
+                        }
+                        .benefit__text-img__text-container{
+                              margin-left: 40px;
                         }
                   }
                   @media screen and (max-width: 1200px){
@@ -393,6 +440,22 @@
                               max-width: 750px;
                               width: 100%;
                         }
+                        .benefit__title{
+                              margin-bottom: 30px;
+                        }
+                        .benefit__text-img{
+                              flex-direction: column;
+                        }
+                        
+                        .benefit__text-img__title{
+                              margin-top: 40px;
+                        }
+                        .benefit__text-img__text-container, .benefit__text-img--reverse .benefit__text-img__text-container {
+                              margin-left: 0px;
+                              margin-right: 0px;
+                              width: 640px;
+                        }
+
                   }
                   @media screen and (max-width: 996px){
                         .hero__title{
@@ -426,6 +489,14 @@
                         .inter__title{
                               font-size: 2.5rem;
                               margin-bottom: 110px;
+                        }
+                        .benefit__text-img__img  {
+                              min-width: 320px;
+                              max-width: none;
+                              max-height: none;
+                        }
+                        .benefit__text-img__text-container , .benefit__text-img--reverse .benefit__text-img__text-container {
+                              width: 100%;
                         }
                        
                   }
@@ -541,7 +612,7 @@
                               margin-top: 40px;
                         }    
                         .feature{
-                              padding: 60px 30px;
+                              padding: 60px 10px;
                         }
                         .feature__cloud,.feature__card-container{
                               display: none;
@@ -584,6 +655,30 @@
                         .inter__bottom-btn{
                               margin-top: 40px;
                         }
+
+                        .benefit{
+                              padding: 40px 10px;
+                        }
+                        .benefit__text-img{
+                              padding: 30px 0px;
+                        }
+                        .benefit__text-img__img  {
+                              width: 320px;
+                              min-width: auto;
+                              
+                        }
+                        .benefit__text-img__text-container , .benefit__text-img--reverse .benefit__text-img__text-container {
+                              width: 320px;
+                              padding: 0px 0px;
+                        }
+                       
+                        .benefit__text-img__title{
+                              font-weight: 800;
+                        }
+                        .benefit__bottom-btn-container{
+                              display: flex;
+                        justify-content: center;
+                        }
                   }
 
                   @media screen and (max-width: 320px){
@@ -609,6 +704,19 @@
                               margin-top: 50px;
                               
                         }
+                        .benefit__text-img{
+                              padding: 30px 10px;
+                        }
+                        .benefit__text-img__img  {
+                              width: 100%;
+
+                              
+                        }
+                        .benefit__text-img__text-container , .benefit__text-img--reverse .benefit__text-img__text-container {
+                              width: 100%;
+                              padding: 0px 10px;
+                        }
+                        
                   }
 
             </style>
@@ -787,6 +895,41 @@
                                           <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
                                     </button>
                               </div>
+                        </div>
+                  </div>
+
+            </section>
+            <section name="benefit">
+                  <div class="benefit container">
+                        <h2 class="benefit__title text-h2">
+                              Let Your Nerves <span class="benefit__title--bold">Melt</span> Away
+                        </h2>
+                        <div class="benefit__text-img">
+                              <img src="assets/images/benefit-1.png" class="benefit__text-img__img" alt="demonstrate the benefit for user from RandomCrush">
+                              <div class="benefit__text-img__text-container">
+                                    <h3 class="benefit__text-img__title text-h3">Lose Yourself</h3>
+                                    <p class="text-p">If you’ve never video chatted online, let alone had a sex chat over webcam, it might seem a bit daunting. But on RandomCrush, not only is it easy, it’s fun! As soon as you start chatting with a sweet, girl next door type, any nerves you have will disappear and you’ll lose yourself in the moment.</p>
+                              </div>
+                        </div>
+                        <div class="benefit__text-img benefit__text-img--reverse">
+                              <img src="assets/images/benefit-2.png" class="benefit__text-img__img" alt="demonstrate the benefit for user from RandomCrush">
+                              <div class="benefit__text-img__text-container">
+                                    <h3 class="benefit__text-img__title text-h3">Relax and Enjoy</h3>
+                                    <p class="text-p">It starts as a conversation with a pretty girl, then before you know it, you’ll be having a mind-blowing sexual experience with a total stranger. Don’t be shy, this is your chance to let out your inner freak. Nobody’s there to judge you, so you can relax and just have fun.</p>
+                              </div>
+                        </div>
+                        <div class="benefit__text-img">
+                              <img src="assets/images/benefit-3.png" class="benefit__text-img__img" alt="demonstrate the benefit for user from RandomCrush">
+                              <div class="benefit__text-img__text-container">
+                                    <h3 class="benefit__text-img__title text-h3">Anything Goes</h3>
+                                    <p class="text-p">Tell your partner what you’re into, and maybe she’ll share your interests. Watch as she bares her tits and plays with her pussy while telling you what she wants you to do for her. It’s just the two of you, so anything can happen.</p>
+                              </div>
+                        </div>
+                        <div class="benefit__bottom-btn-container">
+                              <button onclick="window.location = '/'" class="benefit__bottom-btn btn btn-primary btn-primary--big">
+                                    <span style="padding-top: 5px;">Try now</span>
+                                    <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
+                              </button>
                         </div>
                   </div>
 
