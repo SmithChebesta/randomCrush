@@ -313,6 +313,41 @@
 
                   }
                   
+
+                  .inter-bg{
+                        background: #F8F8F8;
+                        background-image: url(assets/images/flags-big.png);
+                        background-position: -80px 300px;
+                        background-repeat: repeat-x;
+                  }
+                  .inter{
+                        padding: 80px 60px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center; 
+                           
+                  }
+                  .inter__title{
+                        color: rgba(18, 17, 37, 1);
+                        text-shadow: none;
+                        margin-bottom: 80px;
+                  }
+                  .inter__card{
+                        padding: 60px;
+                        max-width: 980px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                  }
+                  .inter__card__title{
+                        font-size: 2.125rem;
+                        font-weight:800;
+                        margin-bottom: 60px;
+                  }
+                  .inter__bottom-btn{
+                        margin-top: 60px;
+                  }
                   @media screen and (max-width: 1440px){
                         .hero__title{
                               font-size: 4.4rem;
@@ -379,6 +414,20 @@
                               margin-top: 40px;
                               width: 450px;
                         }
+                        .inter-bg{
+                              background-image: url(assets/images/flags-big.png);
+                              background-position: -80px 170px;
+                              background-repeat: no-repeat;
+                        }
+                        .inter{
+                              padding: 40px 10px  90px;
+                        }
+                        
+                        .inter__title{
+                              font-size: 2.5rem;
+                              margin-bottom: 110px;
+                        }
+                       
                   }
                   @media screen and (max-width: 576px){
                         body{
@@ -519,6 +568,21 @@
                               margin-top: 40px;
                               /* max-width: 320px; */
                               width: 100%;
+                        }
+
+                        .inter-bg{
+                              background-image: url(assets/images/flags.png),url(assets/images/flags.png),url(assets/images/flags.png);
+                              background-position: -80px 170px, -80px 450px, -80px 730px;
+                              background-repeat: no-repeat;
+                        }
+                        .inter__card{
+                              padding: 20px;
+                        }
+                        .inter__card__title{
+                              margin-bottom: 40px;
+                        }
+                        .inter__bottom-btn{
+                              margin-top: 40px;
                         }
                   }
 
@@ -700,6 +764,32 @@
                               <img src="assets/images/cloud-small.svg" class="feature__cloud feature__cloud-small-bl" alt="" srcset="">
                         </div>
                   </div>
+            </section>
+            <section name="inter">
+                  <div class="inter-bg">
+                        <div class="inter container">
+                              <h2 class="inter__title text-h2">
+                                    Sex Chat With International Babes
+                              </h2>
+                              <div class="inter__card card">
+                                    <h3 class="inter__card__title text-h3">
+                                          Real-Time Translations
+                                    </h3>
+                                    <p class="text-p">
+                                          Once you land on a girl who tickles your fancy, interact with her for a little bit longer. With over 1 million members from 100+ countries, you are bound to find a girl you want to talk to. And don’t worry about a language barrier. A little thing like having a different mother tongue shouldn’t get in the way of an instant connection. Our chat window automatically translates messages so you can get to know your partner better. 
+                                    </p>
+                                    <br>
+                                    <p class="text-p">
+                                          Chat with a beautiful girl from Japan or a fiery Latina from Mexico and never miss a beat. Flirting just got so much easier and it means you’re one step closer to having wild cam sex.
+                                    </p>
+                                    <button onclick="window.location = '/'" class="inter__bottom-btn btn btn-primary btn-primary--big">
+                                          <span style="padding-top: 5px;">Start chatting</span>
+                                          <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
+                                    </button>
+                              </div>
+                        </div>
+                  </div>
+
             </section>
       </body>
 </html>
