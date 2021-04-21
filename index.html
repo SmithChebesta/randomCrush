@@ -100,6 +100,18 @@
                         text-decoration: none;
                         color: inherit;
                   }
+                  .slider-nav{
+                        display: none;
+                        width: 100%;
+                        justify-content: space-around;
+                        padding: 30px 0px;
+                        
+                  }
+                  .slider-nav__icon{
+                        width: 40px;
+                        height: 40px;
+                        cursor: pointer;
+                  }
 
                   .nav {
                         z-index: 99;
@@ -626,7 +638,9 @@
                         .white-space-nowarp{
                               white-space: nowrap;
                         }
-
+                        .slider-nav{
+                              display: flex;
+                        }
                         .nav{
                               padding: 10px;
                         }
@@ -665,7 +679,7 @@
                         .hero__card{
                               width: 100%;
                               display: none;
-
+                              margin-bottom: 0px;
                         }
                         .hero__card--last{
                               margin-bottom: inherit;
@@ -720,7 +734,7 @@
                         }
                         .feature__card-container{
                               min-width: 0px;
-                              margin-bottom: 40px;
+                              margin-bottom: 0px;
                         }
                         .feature__card {
                               margin-top: 40px;
@@ -897,7 +911,10 @@
                                           </p>
                                     </div>
                               </div>
-
+                              <div class="slider-nav">
+                                    <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev">
+                                    <img src="assets/images/next.svg" class="slider-nav__icon slider-nav__next">
+                              </div>
                               <button  onclick="window.location = '/'" class="hero__bottom-btn btn btn-primary btn-primary--big">
                                     <span style="padding-top: 5px;">Try now</span>
                                     <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
@@ -968,6 +985,10 @@
                                           </p>
                                     </div>
                                     <img src="assets/images/feature-3.png" class="feature__card__img" alt="woman">
+                              </div>
+                              <div class="slider-nav">
+                                    <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev">
+                                    <img src="assets/images/next.svg" class="slider-nav__icon slider-nav__next">
                               </div>
                               <button onclick="window.location = '/'" class="feature__bottom-btn btn btn-primary btn-primary--big">
                                     <span style="padding-top: 5px;">Get started</span>
@@ -1068,5 +1089,11 @@
                   <span class="footer__divider"> | </span>
                   <a href="#" class="footer__link">18 U.S.C. 2257 and 2257A Record-Keeping Requirements Compliance Statement</a>
             </footer>
+
+            <script>
+                  const slider = (function (sliderRoot) {
+                        
+                  })()
+            </script>
       </body>
 </html>
