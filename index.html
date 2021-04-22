@@ -1242,9 +1242,6 @@
                                     const isIndexChanged = fromIndex !== toIndex
                                     const isGoNext = toIndex > fromIndex
                                     if(isIndexChanged){
-                                          slide[fromIndex].classList.remove('slide-next-in','slide-prev-in','slide-show')
-                                          slide[toIndex].classList.remove('slide-next-in','slide-prev-in')
-                                          slide[toIndex].classList.add('slide-show')
                                           if(isGoNext){
                                                 prevBtn.src = PREV_SRC.active
                                                 slide[toIndex].classList.add('slide-next-in')
@@ -1252,6 +1249,9 @@
                                                 nextBtn.src = NEXT_SRC.active
                                                 slide[toIndex].classList.add('slide-prev-in')
                                           }
+                                          slide[fromIndex].classList.remove('slide-next-in','slide-prev-in','slide-show')
+                                          slide[toIndex].classList.remove('slide-next-in','slide-prev-in')
+                                          slide[toIndex].classList.add('slide-show')
                                           
                                           
                                     }
