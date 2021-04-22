@@ -1004,8 +1004,30 @@
                                           </div>
                                     </div>
                                     <div class="slider-nav">
-                                          <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev">
-                                          <img src="assets/images/next.svg" class="slider-nav__icon slider-nav__next">
+                                          <!-- <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev"> -->
+                                          <svg width="41" height="40" viewBox="0 0 41 40" class="slider-nav__icon slider-nav__prev" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" width="40" height="40" rx="20" fill="url(#paint0_linear)"/>
+                                                <path id="arrow" d="M23.15 10L25.5 12.35L17.8667 20L25.5 27.65L23.15 30L13.15 20L23.15 10Z" fill="#8B8B8B"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear" x1="20.5" y1="0" x2="20.5" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.359375" stop-color="#B413ED"/>
+                                                <stop offset="1" stop-color="#6725E4"/>
+                                                </linearGradient>
+                                                </defs>
+                                          </svg>
+                                                
+                                          <!-- <img src="assets/images/next.svg" class="slider-nav__icon slider-nav__next"> -->
+                                          <svg class="slider-nav__icon slider-nav__next" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" width="40" height="40" rx="20" fill="url(#paint0_linear)"/>
+                                                <path id="arrow" d="M17.85 10L15.5 12.35L23.1333 20L15.5 27.65L17.85 30L27.85 20L17.85 10Z" fill="white"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear" x1="20.5" y1="0" x2="20.5" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.359375" stop-color="#B413ED"/>
+                                                <stop offset="1" stop-color="#6725E4"/>
+                                                </linearGradient>
+                                                </defs>
+                                          </svg>
+                                                
                                     </div>
                               </div>
 
@@ -1082,8 +1104,29 @@
                                           <img src="assets/images/feature-3.png" class="feature__card__img" alt="woman">
                                     </div>
                                     <div class="slider-nav">
-                                          <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev">
-                                          <img src="assets/images/next.svg" class="slider-nav__icon slider-nav__next">
+                                          <!-- <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev">
+                                          <img src="assets/images/next.svg" class="slider-nav__icon slider-nav__next"> -->
+                                          <svg width="41" height="40" viewBox="0 0 41 40" class="slider-nav__icon slider-nav__prev" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" width="40" height="40" rx="20" fill="url(#paint0_linear)"/>
+                                                <path id="arrow" d="M23.15 10L25.5 12.35L17.8667 20L25.5 27.65L23.15 30L13.15 20L23.15 10Z" fill="#8B8B8B"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear" x1="20.5" y1="0" x2="20.5" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.359375" stop-color="#B413ED"/>
+                                                <stop offset="1" stop-color="#6725E4"/>
+                                                </linearGradient>
+                                                </defs>
+                                          </svg>
+                                                
+                                          <svg class="slider-nav__icon slider-nav__next" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" width="40" height="40" rx="20" fill="url(#paint0_linear)"/>
+                                                <path id="arrow" d="M17.85 10L15.5 12.35L23.1333 20L15.5 27.65L17.85 30L27.85 20L17.85 10Z" fill="white"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear" x1="20.5" y1="0" x2="20.5" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.359375" stop-color="#B413ED"/>
+                                                <stop offset="1" stop-color="#6725E4"/>
+                                                </linearGradient>
+                                                </defs>
+                                          </svg>
                                     </div>
                               </div>
                               <button onclick="window.location = '/'" class="feature__bottom-btn btn btn-primary btn-primary--big">
@@ -1192,19 +1235,23 @@
                         const init = function (sliderRoot,slideCount) {
                               let pageIndex = 0
                               // const SITE_URL = "http://127.0.0.1:5500"
-                              const SITE_URL = "https://randomcrush-cams-1566.netlify.app"
-                              const PREV_SRC = {
-                                    active : `${SITE_URL}/assets/images/previous.svg`,
-                                    disabled : `${SITE_URL}/assets/images/previous-disabled.svg`
-                              }
-                              const NEXT_SRC = {
-                                    active : `${SITE_URL}/assets/images/next.svg`,
-                                    disabled : `${SITE_URL}/assets/images/next-disabled.svg`
-                              }
+                              // const SITE_URL = "https://randomcrush-cams-1566.netlify.app"
+                              // const PREV_SRC = {
+                              //       active : `${SITE_URL}/assets/images/previous.svg`,
+                              //       disabled : `${SITE_URL}/assets/images/previous-disabled.svg`
+                              // }
+                              // const NEXT_SRC = {
+                              //       active : `${SITE_URL}/assets/images/next.svg`,
+                              //       disabled : `${SITE_URL}/assets/images/next-disabled.svg`
+                              // }
+                              ACTIVE_COLOR = "#fff"
+                              DISABLED_COLOR = "#8b8b8b"
                               const slide = sliderRoot.querySelectorAll(":scope > *:not(.slider-nav)")
                               const sliderNav = sliderRoot.querySelector(".slider-nav")
                               const prevBtn = sliderNav.firstElementChild
                               const nextBtn = sliderNav.lastElementChild
+                              const prevBtnArrow = prevBtn.querySelector("#arrow")
+                              const nextBtnArrow = nextBtn.querySelector("#arrow")
                               let prevIndex
                               prevBtn.addEventListener("click",goToPrevSlide)
                               nextBtn.addEventListener("click",goToNextSlide)
@@ -1213,13 +1260,13 @@
                               function goToPrevSlide() {
                                     prevIndex = pageIndex
                                     pageIndex = Math.max(0,--pageIndex)
-                                    changeSlide(prevIndex,pageIndex)
                                     disabledPrevBtnOnFirstSlice()
+                                    changeSlide(prevIndex,pageIndex)
 
                                     function disabledPrevBtnOnFirstSlice() {
                                           const isFirstSlide = pageIndex === 0
                                           if(isFirstSlide){
-                                                prevBtn.src = PREV_SRC.disabled
+                                                prevBtnArrow.style.fill = DISABLED_COLOR
                                           } 
                                     }
                               }
@@ -1227,13 +1274,13 @@
                               function goToNextSlide() {
                                     prevIndex = pageIndex
                                     pageIndex = Math.min(slideCount-1,++pageIndex)
-                                    changeSlide(prevIndex,pageIndex)
                                     disabledNextBtnOnLastSlice()
+                                    changeSlide(prevIndex,pageIndex)
 
                                     function disabledNextBtnOnLastSlice() {
                                           const isLastSlide = pageIndex === slideCount-1
                                           if(isLastSlide){
-                                                nextBtn.src = NEXT_SRC.disabled
+                                                nextBtnArrow.style.fill = DISABLED_COLOR
                                           }  
                                     }
                               }
@@ -1242,16 +1289,16 @@
                                     const isIndexChanged = fromIndex !== toIndex
                                     const isGoNext = toIndex > fromIndex
                                     if(isIndexChanged){
-                                          if(isGoNext){
-                                                prevBtn.src = PREV_SRC.active
-                                                slide[toIndex].classList.add('slide-next-in')
-                                          }else{
-                                                nextBtn.src = NEXT_SRC.active
-                                                slide[toIndex].classList.add('slide-prev-in')
-                                          }
                                           slide[fromIndex].classList.remove('slide-next-in','slide-prev-in','slide-show')
                                           slide[toIndex].classList.remove('slide-next-in','slide-prev-in')
                                           slide[toIndex].classList.add('slide-show')
+                                          if(isGoNext){
+                                                prevBtnArrow.style.fill = ACTIVE_COLOR
+                                                slide[toIndex].classList.add('slide-next-in')
+                                          }else{
+                                                nextBtnArrow.style.fill = ACTIVE_COLOR
+                                                slide[toIndex].classList.add('slide-prev-in')
+                                          }
                                           
                                           
                                     }
