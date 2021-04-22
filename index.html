@@ -48,6 +48,10 @@
                         border-radius: 8px;
 
                   }
+                  .btn-primary:hover{
+                        background: linear-gradient(180deg, #7e17a3 35.94%, #47199b 100%);
+
+                  }
                   .btn-icon{
                         margin-left: 6px;
                         height: 14px;
@@ -99,6 +103,11 @@
                   .link-no-decoration {
                         text-decoration: none;
                         color: inherit;
+                  }
+                  .slider{
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
                   }
                   .slider-nav{
                         display: none;
@@ -684,9 +693,7 @@
                         .hero__card--last{
                               margin-bottom: inherit;
                         }
-                        .hero__card--slide-show{
-                              display: initial;
-                        }
+                        
                         .hero__card__img{
                               width: 100%;
                               height: auto;
@@ -719,7 +726,7 @@
                               display: none;
                         } 
                         
-                        .feature__card-container--slide-show{
+                        .slide-show{
                               display: flex; 
                         }
                         .feature__sub-title{
@@ -872,49 +879,52 @@
                               <h2 class="hero__sub-title text-h2 ">
                                     Here’s How it Works:
                               </h2>
-                              <div class="hero__card hero__card--slide-show card ">
-                                    <img src="assets/images/how-it-work-1.png" alt="demonstrate how the product work 1" class="hero__card__img">
-                                    <div class="hero__card__text-container">
-                                          <h3 class="hero__card__title text-h3">1. Get Ready For a 1-on-1 Chat</h3>
-                                          <p class="hero__card__text text-p">
-                                                The first step is simple. All you have to do is choose if you’re a Male or Female. We want to make sure you’re matched with a partner of the opposite sex. Some chat sites will match you with other men. Not here! Make sure your webcam is set up and you’re good to go.
-                                          </p>
+                              <div class="slider">
+                                    <div class="hero__card slide-show card ">
+                                          <img src="assets/images/how-it-work-1.png" alt="demonstrate how the product work 1" class="hero__card__img">
+                                          <div class="hero__card__text-container">
+                                                <h3 class="hero__card__title text-h3">1. Get Ready For a 1-on-1 Chat</h3>
+                                                <p class="hero__card__text text-p">
+                                                      The first step is simple. All you have to do is choose if you’re a Male or Female. We want to make sure you’re matched with a partner of the opposite sex. Some chat sites will match you with other men. Not here! Make sure your webcam is set up and you’re good to go.
+                                                </p>
+                                          </div>
+                                    </div>
+
+                                    <div class="hero__card flex-row-reverse card">
+                                          <img src="assets/images/how-it-work-2.png" alt="demonstrate how the product work 1" class="hero__card__img">
+                                          <div class="hero__card__text-container hero__card__text-container--reverse">
+                                                <h3 class="hero__card__title text-h3">2. Click Next to Find Your Perfect Match</h3>
+                                                <p class="hero__card__text text-p">
+                                                      Now that we know you’re a guy looking for a girl and your webcam is ready, you can get to the good part: meeting a nice girl you can bring home to mom. Click the Next button to automatically get paired with a random girl-next-door from somewhere in the world. Not feeling a connection? Keep clicking Next until you find a girl who fits your vibe!
+                                                </p>
+                                          </div>
+                                    </div>
+
+                                    <div class="hero__card card">
+                                          <img src="assets/images/how-it-work-3.png" alt="demonstrate how the product work 1" class="hero__card__img">
+                                          <div class="hero__card__text-container">
+                                                <h3 class="hero__card__title text-h3">3. Create a Free Account</h3>
+                                                <p class="hero__card__text text-p">
+                                                      Now that you found the girl for you, create an account so you can get to know her better. On other roulette sites, you may have noticed a language barrier. But we have a solution for that. Our chat interface automatically translates messages into your mother tongue. Flirting has never been so easy!
+                                                </p>
+                                          </div>
+                                    </div>
+
+                                    <div class="hero__card hero__card--last flex-row-reverse card">
+                                          <img src="assets/images/how-it-work-4.png" alt="demonstrate how the product work 1" class="hero__card__img">
+                                          <div class="hero__card__text-container hero__card__text-container--reverse">
+                                                <h3 class="hero__card__title text-h3">4. Load Up Your Minutes</h3>
+                                                <p class="hero__card__text text-p">
+                                                      No good date ends with just talking, so why not take things to the next level? You’ll need to purchase minutes so you can continue exploring things for as long as you like. This is your chance to have fun and get to know the girl better. The more you top up your minutes, the longer you get to chat and hang out with that hot babe.
+                                                </p>
+                                          </div>
+                                    </div>
+                                    <div class="slider-nav">
+                                          <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev">
+                                          <img src="assets/images/next.svg" class="slider-nav__icon slider-nav__next">
                                     </div>
                               </div>
 
-                              <div class="hero__card flex-row-reverse card">
-                                    <img src="assets/images/how-it-work-2.png" alt="demonstrate how the product work 1" class="hero__card__img">
-                                    <div class="hero__card__text-container hero__card__text-container--reverse">
-                                          <h3 class="hero__card__title text-h3">2. Click Next to Find Your Perfect Match</h3>
-                                          <p class="hero__card__text text-p">
-                                                Now that we know you’re a guy looking for a girl and your webcam is ready, you can get to the good part: meeting a nice girl you can bring home to mom. Click the Next button to automatically get paired with a random girl-next-door from somewhere in the world. Not feeling a connection? Keep clicking Next until you find a girl who fits your vibe!
-                                          </p>
-                                    </div>
-                              </div>
-
-                              <div class="hero__card card">
-                                    <img src="assets/images/how-it-work-3.png" alt="demonstrate how the product work 1" class="hero__card__img">
-                                    <div class="hero__card__text-container">
-                                          <h3 class="hero__card__title text-h3">3. Create a Free Account</h3>
-                                          <p class="hero__card__text text-p">
-                                                Now that you found the girl for you, create an account so you can get to know her better. On other roulette sites, you may have noticed a language barrier. But we have a solution for that. Our chat interface automatically translates messages into your mother tongue. Flirting has never been so easy!
-                                          </p>
-                                    </div>
-                              </div>
-
-                              <div class="hero__card hero__card--last flex-row-reverse card">
-                                    <img src="assets/images/how-it-work-4.png" alt="demonstrate how the product work 1" class="hero__card__img">
-                                    <div class="hero__card__text-container hero__card__text-container--reverse">
-                                          <h3 class="hero__card__title text-h3">4. Load Up Your Minutes</h3>
-                                          <p class="hero__card__text text-p">
-                                                No good date ends with just talking, so why not take things to the next level? You’ll need to purchase minutes so you can continue exploring things for as long as you like. This is your chance to have fun and get to know the girl better. The more you top up your minutes, the longer you get to chat and hang out with that hot babe.
-                                          </p>
-                                    </div>
-                              </div>
-                              <div class="slider-nav">
-                                    <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev">
-                                    <img src="assets/images/next.svg" class="slider-nav__icon slider-nav__next">
-                              </div>
                               <button  onclick="window.location = '/'" class="hero__bottom-btn btn btn-primary btn-primary--big">
                                     <span style="padding-top: 5px;">Try now</span>
                                     <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
@@ -959,36 +969,38 @@
 
                                     
                               </h2>
-                              <div class="feature__card-container feature__card-container--slide-show">
-                                    <div class="feature__card card">
-                                          <h3 class=" feature__card__title text-h3">Find Your Random Crush</h3>
-                                          <p class="text-p ">On RandomCrush, you’ll be randomly paired with a partner of the opposite sex to chat, virtually flirt and have video sex. That’s right, fellas. You will only be paired with a girl, unlike other roulette sites where you have to click through guy after guy. We monitor the number of signups to maintain a 50:50 ratio of men to women, so you’ll never have to wait long to see a new beautiful face. Even better, these are the types of girls you’d meet at a bar or a friend’s party and want to take home.</p>
+                              <div class="slider">
+                                    <div class="feature__card-container slide-show">
+                                          <div class="feature__card card">
+                                                <h3 class=" feature__card__title text-h3">Find Your Random Crush</h3>
+                                                <p class="text-p ">On RandomCrush, you’ll be randomly paired with a partner of the opposite sex to chat, virtually flirt and have video sex. That’s right, fellas. You will only be paired with a girl, unlike other roulette sites where you have to click through guy after guy. We monitor the number of signups to maintain a 50:50 ratio of men to women, so you’ll never have to wait long to see a new beautiful face. Even better, these are the types of girls you’d meet at a bar or a friend’s party and want to take home.</p>
+                                          </div>
+                                          <img src="assets/images/feature-1.png" class="feature__card__img" alt="woman">
                                     </div>
-                                    <img src="assets/images/feature-1.png" class="feature__card__img" alt="woman">
-                              </div>
-                              <div class="feature__card-container flex-row-reverse">
-                                    <div class="feature__card card">
-                                          <h3 class=" feature__card__title text-h3">Click Next to Find Your Perfect Match</h3>
-                                          <p class="text-p ">Not interested in the first girl you’re paired with? No problem! Click Next and keep looking. It’s speed dating like you’ve never experienced before because it always leads to 1-on-1 cam sex. Instead of waiting for a timer to go off, you can switch partners whenever you want, no awkwardness. You know what that means? You can have a virtual quickie and then move on to the next girl.</p>
+                                    <div class="feature__card-container flex-row-reverse">
+                                          <div class="feature__card card">
+                                                <h3 class=" feature__card__title text-h3">Click Next to Find Your Perfect Match</h3>
+                                                <p class="text-p ">Not interested in the first girl you’re paired with? No problem! Click Next and keep looking. It’s speed dating like you’ve never experienced before because it always leads to 1-on-1 cam sex. Instead of waiting for a timer to go off, you can switch partners whenever you want, no awkwardness. You know what that means? You can have a virtual quickie and then move on to the next girl.</p>
+                                          </div>
+                                          <img src="assets/images/feature-2.png" class="feature__card__img" alt="woman">
                                     </div>
-                                    <img src="assets/images/feature-2.png" class="feature__card__img" alt="woman">
-                              </div>
-                              <div class="feature__card-container feature__card-container--last">
-                                    <div class="feature__card card">
-                                          <h3 class=" feature__card__title text-h3">A New Kind of Roulette Site</h3>
-                                          <p class="text-p ">
-                                                The more you get to know your new friend, the longer you’ll want to chat. Don’t let that connection fade away! Register for an account so you can take full advantage of RandomCrush. Members can video chat using their camera and microphone. Hear her sexy voice while she moans and talks dirty to you. 
-                                          </p>
-                                          <br>
-                                          <p class="text-p ">
-                                                This is different from other roulette sites and live chat sites.  It’s not about cam girls putting on a show or taking them into a private chat. These are regular people who are looking for fun and a real connection. You can explore your raunchy fantasies with a stranger, just the two of you, which makes it even sexier.
-                                          </p>
+                                    <div class="feature__card-container feature__card-container--last">
+                                          <div class="feature__card card">
+                                                <h3 class=" feature__card__title text-h3">A New Kind of Roulette Site</h3>
+                                                <p class="text-p ">
+                                                      The more you get to know your new friend, the longer you’ll want to chat. Don’t let that connection fade away! Register for an account so you can take full advantage of RandomCrush. Members can video chat using their camera and microphone. Hear her sexy voice while she moans and talks dirty to you. 
+                                                </p>
+                                                <br>
+                                                <p class="text-p ">
+                                                      This is different from other roulette sites and live chat sites.  It’s not about cam girls putting on a show or taking them into a private chat. These are regular people who are looking for fun and a real connection. You can explore your raunchy fantasies with a stranger, just the two of you, which makes it even sexier.
+                                                </p>
+                                          </div>
+                                          <img src="assets/images/feature-3.png" class="feature__card__img" alt="woman">
                                     </div>
-                                    <img src="assets/images/feature-3.png" class="feature__card__img" alt="woman">
-                              </div>
-                              <div class="slider-nav">
-                                    <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev">
-                                    <img src="assets/images/next.svg" class="slider-nav__icon slider-nav__next">
+                                    <div class="slider-nav">
+                                          <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev">
+                                          <img src="assets/images/next.svg" class="slider-nav__icon slider-nav__next">
+                                    </div>
                               </div>
                               <button onclick="window.location = '/'" class="feature__bottom-btn btn btn-primary btn-primary--big">
                                     <span style="padding-top: 5px;">Get started</span>
@@ -1091,9 +1103,79 @@
             </footer>
 
             <script>
-                  const slider = (function (sliderRoot) {
-                        
+
+                  const slider = (function () {
+                        const init = function (sliderRoot,slideCount) {
+                              let pageIndex = 0
+                              // const SITE_URL = "http://127.0.0.1:5500"
+                              const SITE_URL = "https://randomcrush-cams-1566.netlify.app"
+                              const PREV_SRC = {
+                                    active : `${SITE_URL}/assets/images/previous.svg`,
+                                    disabled : `${SITE_URL}/assets/images/previous-disabled.svg`
+                              }
+                              const NEXT_SRC = {
+                                    active : `${SITE_URL}/assets/images/next.svg`,
+                                    disabled : `${SITE_URL}/assets/images/next-disabled.svg`
+                              }
+                              const slide = sliderRoot.querySelectorAll(":scope > *:not(.slider-nav)")
+                              const sliderNav = sliderRoot.querySelector(".slider-nav")
+                              const prevBtn = sliderNav.firstElementChild
+                              const nextBtn = sliderNav.lastElementChild
+                              let prevIndex
+                              prevBtn.addEventListener("click",goToPrevSlide)
+                              nextBtn.addEventListener("click",goToNextSlide)
+
+
+                              function goToPrevSlide() {
+                                    prevIndex = pageIndex
+                                    pageIndex = Math.max(0,--pageIndex)
+                                    changeSlide(prevIndex,pageIndex)
+                                    disabledPrevBtnOnFirstSlice()
+
+                                    function disabledPrevBtnOnFirstSlice() {
+                                          const isFirstSlide = pageIndex === 0
+                                          if(isFirstSlide){
+                                                prevBtn.src = PREV_SRC.disabled
+                                          } 
+                                    }
+                              }
+                              
+                              function goToNextSlide() {
+                                    prevIndex = pageIndex
+                                    pageIndex = Math.min(slideCount-1,++pageIndex)
+                                    changeSlide(prevIndex,pageIndex)
+                                    disabledNextBtnOnLastSlice()
+
+                                    function disabledNextBtnOnLastSlice() {
+                                          const isLastSlide = pageIndex === slideCount-1
+                                          if(isLastSlide){
+                                                nextBtn.src = NEXT_SRC.disabled
+                                          }  
+                                    }
+                              }
+                              
+                              function changeSlide(fromIndex,toIndex) {
+                                    const isIndexChanged = fromIndex !== toIndex
+                                    const isGoNext = toIndex > fromIndex
+                                    if(isIndexChanged){
+                                          if(isGoNext){
+                                                prevBtn.src = PREV_SRC.active
+                                          }else{
+                                                nextBtn.src = NEXT_SRC.active
+                                          }
+                                          slide[fromIndex].classList.remove('slide-show')
+                                          slide[toIndex].classList.add('slide-show')
+                                    }
+                              }
+                        }
+
+
+                        return {
+                              init
+                        }
                   })()
+                  slider.init(document.querySelector(".hero_container .slider"),4)
+                  slider.init(document.querySelector(".feature .slider"),3)
             </script>
       </body>
 </html>
