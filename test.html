@@ -18,8 +18,13 @@
             <link rel="manifest" href="assets/favicon/site.webmanifest">
             <meta name="msapplication-TileColor" content="#da532c">
             <meta name="theme-color" content="#ffffff">
+            <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css">
+            <script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"></script> -->
       </head>
       <body>
+            <style>
+                  .progressive{position:relative;display:block;overflow:hidden;outline:none}.progressive img{display:block;width:100%;max-width:none;height:auto;border:0}.progressive img.preview{filter:blur(2vw);transform:scale(1.05)}.progressive img.reveal{position:absolute;left:0;top:0;animation:progressiveReveal 1s linear}@keyframes progressiveReveal{0%{transform:scale(1.05);opacity:0}to{transform:scale(1);opacity:1}}
+            </style>
             <style>
                   body {
                         margin: 0;
@@ -273,16 +278,18 @@
                   .hero__card{
                         width: 100%;
                         display: flex;
+                        align-items: center;
                         justify-content: space-between;
                         margin-bottom: 20px;
                         z-index: 3;
-                        align-items: center;
+
 
                   }
                   .hero__card--last{
                         margin-bottom: 80px;
                   }
                   .hero__card__img{
+                        flex-shrink: 0;
                         width: 530px;
                         height: 350px;
                   }
@@ -348,8 +355,8 @@
                         left: 15%;
                         top: -80px;
                         z-index: 3;
+                        flex-shrink: 0;
                         width: 350px;
-
                   }
                   .device__bottom-btn{
                         margin-top: 80px;
@@ -480,6 +487,7 @@
                         max-width: 640px;
                         max-height: 350px;
                         width: 100%;
+                        flex-shrink: 0;
 
                   }
                   .benefit__text-img__text-container{
@@ -526,6 +534,7 @@
                   .cta__card__img{
                         width: 430px;
                         height: 250px;
+                        flex-shrink: 0;
                   }
                   .footer{
                         padding: 40px 10px;
@@ -930,7 +939,14 @@
                         }
                         
                   }
+                  .progressive img.reveal {
+                        animation: progressiveReveal 300ms linear;
+                  }
 
+                  @keyframes progressiveReveal {
+                        0% {  opacity: 0; }
+                        100% {  opacity: 1; }
+                  }
             </style>
             <nav class="nav">
                   <div class="nav__logo-container">
@@ -952,7 +968,10 @@
                               <h1 class="hero__title">
                                     Random Cam Chat with Girls
                               </h1>
-                              <img src="assets/images/hero-image.png" alt="video demo" class="hero__image">
+                              <a href="assets/images/hero-image.png" class="hero__image progressive replace">
+                                    <img src="assets/images/hero-image-ugly.png" class="preview" alt="image" />
+                              </a>
+                              <!-- <img src="assets/images/hero-image.png" alt="video demo" class="hero__image"> -->
                               <button onclick="window.location = '/'" class="btn btn-primary btn-primary--big">
                                           <span style="padding-top: 5px;">Get started</span>
                                           <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
@@ -965,7 +984,10 @@
                               </h2>
                               <div class="slider">
                                     <div class="hero__card slide-show card ">
-                                          <img src="assets/images/how-it-work-1.png" alt="demonstrate how the product work 1" class="hero__card__img">
+                                          <a href="assets/images/how-it-work-1.png" class="hero__card__img progressive replace">
+                                                <img src="assets/images/how-it-work-1-ugly.png" class="preview" alt="image" />
+                                          </a>
+                                          <!-- <img src="assets/images/how-it-work-1.png" alt="demonstrate how the product work 1" class="hero__card__img"> -->
                                           <div class="hero__card__text-container">
                                                 <h3 class="hero__card__title text-h3">1. Get Ready For a 1-on-1 Chat</h3>
                                                 <p class="hero__card__text text-p">
@@ -975,7 +997,10 @@
                                     </div>
 
                                     <div class="hero__card flex-row-reverse card">
-                                          <img src="assets/images/how-it-work-2.png" alt="demonstrate how the product work 1" class="hero__card__img">
+                                          <a href="assets/images/how-it-work-2.png" class="hero__card__img progressive replace">
+                                                <img src="assets/images/how-it-work-2-ugly.png" class="preview" alt="image" />
+                                          </a>
+                                          <!-- <img src="assets/images/how-it-work-2.png" alt="demonstrate how the product work 1" class="hero__card__img"> -->
                                           <div class="hero__card__text-container hero__card__text-container--reverse">
                                                 <h3 class="hero__card__title text-h3">2. Click Next to Find Your Perfect Match</h3>
                                                 <p class="hero__card__text text-p">
@@ -985,7 +1010,10 @@
                                     </div>
 
                                     <div class="hero__card card">
-                                          <img src="assets/images/how-it-work-3.png" alt="demonstrate how the product work 1" class="hero__card__img">
+                                          <a href="assets/images/how-it-work-3.png" class="hero__card__img progressive replace">
+                                                <img src="assets/images/how-it-work-3-ugly.png" class="preview" alt="image" />
+                                          </a>
+                                          <!-- <img src="assets/images/how-it-work-3.png" alt="demonstrate how the product work 1" class="hero__card__img"> -->
                                           <div class="hero__card__text-container">
                                                 <h3 class="hero__card__title text-h3">3. Create a Free Account</h3>
                                                 <p class="hero__card__text text-p">
@@ -995,7 +1023,10 @@
                                     </div>
 
                                     <div class="hero__card hero__card--last flex-row-reverse card">
-                                          <img src="assets/images/how-it-work-4.png" alt="demonstrate how the product work 1" class="hero__card__img">
+                                          <a href="assets/images/how-it-work-4.png" class="hero__card__img progressive replace">
+                                                <img src="assets/images/how-it-work-4-ugly.png" class="preview" alt="image" />
+                                          </a>
+                                          <!-- <img src="assets/images/how-it-work-4.png" alt="demonstrate how the product work 1" class="hero__card__img"> -->
                                           <div class="hero__card__text-container hero__card__text-container--reverse">
                                                 <h3 class="hero__card__title text-h3">4. Load Up Your Minutes</h3>
                                                 <p class="hero__card__text text-p">
@@ -1023,7 +1054,10 @@
             <section name="device-blurb">
                   <div class="device-bg">
                         <div class="device container">
-                              <img src="assets/images/iPhone X.png" class="device__img" alt="demonstrate how RandomCrush work on iPhone X" srcset="">
+                              <a href="assets/images/iPhone X.png" class="device__img progressive replace">
+                                    <img src="assets/images/iPhone X-ugly.png" class="preview" alt="image" />
+                              </a>
+                              <!-- <img src="assets/images/iPhone X.png" class="device__img" alt="demonstrate how RandomCrush work on iPhone X" srcset=""> -->
                               <div class="device__text">
                                           <h3 class="text-h3 device__text__title">Have Video Sex on Any Device</h3>
                                           <p class="text-p ">
@@ -1041,6 +1075,7 @@
                         </div>
                   </div>
             </section>
+           
             <section name="feature">
                   <div class="feature-bg">
                         <div class="feature container">
@@ -1059,14 +1094,20 @@
                                                 <h3 class=" feature__card__title text-h3">Find Your Random Crush</h3>
                                                 <p class="text-p ">On RandomCrush, you’ll be randomly paired with a partner of the opposite sex to chat, virtually flirt and have video sex. That’s right, fellas. You will only be paired with a girl, unlike other roulette sites where you have to click through guy after guy. We monitor the number of signups to maintain a 50:50 ratio of men to women, so you’ll never have to wait long to see a new beautiful face. Even better, these are the types of girls you’d meet at a bar or a friend’s party and want to take home.</p>
                                           </div>
-                                          <img src="assets/images/feature-1.png" class="feature__card__img" alt="woman">
+                                          <a href="assets/images/feature-1.png" class="feature__card__img progressive replace">
+                                                <img src="assets/images/feature-1-ugly.png" class="preview" alt="image" />
+                                          </a>
+                                          <!-- <img src="assets/images/feature-1.png" class="feature__card__img" alt="woman"> -->
                                     </div>
                                     <div class="feature__card-container flex-row-reverse">
                                           <div class="feature__card card">
                                                 <h3 class=" feature__card__title text-h3">Click Next to Find Your Perfect Match</h3>
                                                 <p class="text-p ">Not interested in the first girl you’re paired with? No problem! Click Next and keep looking. It’s speed dating like you’ve never experienced before because it always leads to 1-on-1 cam sex. Instead of waiting for a timer to go off, you can switch partners whenever you want, no awkwardness. You know what that means? You can have a virtual quickie and then move on to the next girl.</p>
                                           </div>
-                                          <img src="assets/images/feature-2.png" class="feature__card__img" alt="woman">
+                                          <a href="assets/images/feature-2.png" class="feature__card__img progressive replace">
+                                                <img src="assets/images/feature-2-ugly.png" class="preview" alt="image" />
+                                          </a>
+                                          <!-- <img src="assets/images/feature-2.png" class="feature__card__img" alt="woman"> -->
                                     </div>
                                     <div class="feature__card-container feature__card-container--last">
                                           <div class="feature__card card">
@@ -1079,7 +1120,10 @@
                                                       This is different from other roulette sites and live chat sites.  It’s not about cam girls putting on a show or taking them into a private chat. These are regular people who are looking for fun and a real connection. You can explore your raunchy fantasies with a stranger, just the two of you, which makes it even sexier.
                                                 </p>
                                           </div>
-                                          <img src="assets/images/feature-3.png" class="feature__card__img" alt="woman">
+                                          <a href="assets/images/feature-3.png" class="feature__card__img progressive replace">
+                                                <img src="assets/images/feature-3-ugly.png" class="preview" alt="image" />
+                                          </a>
+                                          <!-- <img src="assets/images/feature-3.png" class="feature__card__img" alt="woman"> -->
                                     </div>
                                     <div class="slider-nav">
                                           <img src="assets/images/previous-disabled.svg" class="slider-nav__icon slider-nav__prev">
@@ -1097,6 +1141,9 @@
                         </div>
                   </div>
             </section>
+             <!-- <a href="" class=" progressive replace">
+                  <img src="" class="preview" alt="image" />
+            </a> -->
             <section name="inter">
                   <div class="inter-bg">
                         <div class="inter container">
@@ -1129,21 +1176,30 @@
                               Let Your Nerves <span class="benefit__title--bold">Melt</span> Away
                         </h2>
                         <div class="benefit__text-img">
-                              <img src="assets/images/benefit-1.png" class="benefit__text-img__img" alt="demonstrate the benefit for user from RandomCrush">
+                              <a href="assets/images/benefit-1.png" class="benefit__text-img__img progressive replace">
+                                    <img src="assets/images/benefit-1-ugly.png" class="preview" alt="image" />
+                              </a>
+                              <!-- <img src="assets/images/benefit-1.png" class="benefit__text-img__img" alt="demonstrate the benefit for user from RandomCrush"> -->
                               <div class="benefit__text-img__text-container">
                                     <h3 class="benefit__text-img__title text-h3">Lose Yourself</h3>
                                     <p class="text-p">If you’ve never video chatted online, let alone had a sex chat over webcam, it might seem a bit daunting. But on RandomCrush, not only is it easy, it’s fun! As soon as you start chatting with a sweet, girl next door type, any nerves you have will disappear and you’ll lose yourself in the moment.</p>
                               </div>
                         </div>
                         <div class="benefit__text-img benefit__text-img--reverse">
-                              <img src="assets/images/benefit-2.png" class="benefit__text-img__img" alt="demonstrate the benefit for user from RandomCrush">
+                              <a href="assets/images/benefit-2.png" class="benefit__text-img__img progressive replace">
+                                    <img src="assets/images/benefit-2-ugly.png" class="preview" alt="image" />
+                              </a>
+                              <!-- <img src="assets/images/benefit-2.png" class="benefit__text-img__img" alt="demonstrate the benefit for user from RandomCrush"> -->
                               <div class="benefit__text-img__text-container">
                                     <h3 class="benefit__text-img__title text-h3">Relax and Enjoy</h3>
                                     <p class="text-p">It starts as a conversation with a pretty girl, then before you know it, you’ll be having a mind-blowing sexual experience with a total stranger. Don’t be shy, this is your chance to let out your inner freak. Nobody’s there to judge you, so you can relax and just have fun.</p>
                               </div>
                         </div>
                         <div class="benefit__text-img">
-                              <img src="assets/images/benefit-3.png" class="benefit__text-img__img" alt="demonstrate the benefit for user from RandomCrush">
+                              <a href="assets/images/benefit-3.png" class="benefit__text-img__img progressive replace">
+                                    <img src="assets/images/benefit-3-ugly.png" class="preview" alt="image" />
+                              </a>
+                              <!-- <img src="assets/images/benefit-3.png" class="benefit__text-img__img" alt="demonstrate the benefit for user from RandomCrush"> -->
                               <div class="benefit__text-img__text-container">
                                     <h3 class="benefit__text-img__title text-h3">Anything Goes</h3>
                                     <p class="text-p">Tell your partner what you’re into, and maybe she’ll share your interests. Watch as she bares her tits and plays with her pussy while telling you what she wants you to do for her. It’s just the two of you, so anything can happen.</p>
@@ -1158,6 +1214,7 @@
                   </div>
 
             </section>
+            
             <section name="cta">
                   <div class="cta-bg">
                         <div class="cta container">
@@ -1172,7 +1229,10 @@
                                                 <img src="assets/images/chevron-right.svg" class="btn-icon btn-icon--big" height="14" alt="chevron right">
                                           </button>
                                     </div>
-                                    <img src="assets/images/Mockup.png" class="cta__card__img" alt="Mock up">
+                                    <a href="assets/images/Mockup.png" class="cta__card__img progressive replace">
+                                          <img src="assets/images/Mockup-ugly.png" class="preview" alt="image" />
+                                    </a>
+                                    <!-- <img src="assets/images/Mockup.png" class="cta__card__img" alt="Mock up"> -->
                               </div>
                         </div>
                   </div>
@@ -1185,7 +1245,9 @@
                   <span class="footer__divider"> | </span>
                   <a href="#" class="footer__link">18 U.S.C. 2257 and 2257A Record-Keeping Requirements Compliance Statement</a>
             </footer>
-
+            <script>
+                  window.addEventListener&&window.addEventListener('load',function(){'use strict';var e=document.body;if(e.getElementsByClassName&&e.querySelector&&e.classList&&e.getBoundingClientRect){var t,n='replace',i='preview',s='reveal',r=document.getElementsByClassName('progressive '+n),o=window.requestAnimationFrame||function(e){e()};['pageshow','scroll','resize'].forEach(function(e){window.addEventListener(e,a,{passive:!0})}),window.MutationObserver&&new MutationObserver(a).observe(e,{subtree:!0,childList:!0,attributes:!0}),c()}function a(){t=t||setTimeout(function(){t=null,c()},300)}function c(){r.length&&o(function(){for(var e,t,n=window.innerHeight,i=0;i<r.length;)0<(t=(e=r[i].getBoundingClientRect()).top)+e.height&&n>t?u(r[i]):i++})}function u(e,t){e.classList.remove(n);var r=e.getAttribute('data-href')||e.href,a=e.querySelector('img.'+i);if(r&&a){var c=new Image,l=e.dataset;l&&(l.srcset&&(c.srcset=l.srcset),l.sizes&&(c.sizes=l.sizes)),c.onload=function(){r===e.href&&(e.style.cursor='default',e.addEventListener('click',function(e){e.preventDefault()}));var t=c.classList;c.className=a.className,t.remove(i),t.add(s),c.alt=a.alt||'',o(function(){e.insertBefore(c,a.nextSibling).addEventListener('animationend',function(){e.removeChild(a),t.remove(s)})})},(t=1+(t||0))<3&&(c.onerror=function(){setTimeout(function(){u(e,t)},3e3*t)}),c.src=r}}},!1);
+            </script>
             <script>
 
                   const slider = (function () {
