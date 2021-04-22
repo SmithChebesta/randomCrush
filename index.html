@@ -545,6 +545,9 @@
 
                         
                   }
+                  .footer__link:hover{
+                        color: #aaa;
+                  }
                   .footer__divider{
                         margin: 0px 4px;
                   }
@@ -1234,16 +1237,6 @@
                   const slider = (function () {
                         const init = function (sliderRoot,slideCount) {
                               let pageIndex = 0
-                              // const SITE_URL = "http://127.0.0.1:5500"
-                              // const SITE_URL = "https://randomcrush-cams-1566.netlify.app"
-                              // const PREV_SRC = {
-                              //       active : `${SITE_URL}/assets/images/previous.svg`,
-                              //       disabled : `${SITE_URL}/assets/images/previous-disabled.svg`
-                              // }
-                              // const NEXT_SRC = {
-                              //       active : `${SITE_URL}/assets/images/next.svg`,
-                              //       disabled : `${SITE_URL}/assets/images/next-disabled.svg`
-                              // }
                               ACTIVE_COLOR = "#fff"
                               DISABLED_COLOR = "#8b8b8b"
                               const slide = sliderRoot.querySelectorAll(":scope > *:not(.slider-nav)")
